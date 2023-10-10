@@ -54,5 +54,7 @@ class pid_controller {
    * @param actual_velocity // actual velocity
    * @return double
    */
-  double compute_velocity(double set_point, double actual_velocity) {}
+  double compute_velocity(double set_point, double actual_velocity) {
+    return 0.0;
+  }
 };
