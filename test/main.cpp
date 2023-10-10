@@ -1,13 +1,24 @@
+/**
+ * @file main.cpp
+ * @author Jay Prajapati (Jay Prajapti)
+ * @brief souce file to run all the test cases written in "test.cpp"
+ * @version 0.1
+ * @date 2023-10-10
+ *
+ * @copyright Copyright (c) 2023
+ *
+ */
 #include <gtest/gtest.h>
 
-#include "lib.hpp"
-#include "lib1.hpp"
+#include "pid_controller.hpp"
 
-void function_not_used() {
-  dummy();
-  int notUsed = my_function1(3);
-}
-
+/**
+ * @brief run all tests
+ *
+ * @param argc
+ * @param argv
+ * @return int
+ */
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
