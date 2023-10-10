@@ -1,8 +1,10 @@
 # cpp-boilerplate-v2
 
-# C++ Boilerplate v2 Badges
-![CICD Workflow status](https://github.com/TommyChangUMD/cpp-boilerplate-v2/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) [![codecov](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2/branch/main/graph/badge.svg)](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+## C++ Boilerplate v2 Badges
 
+[![Build](https://github.com/jayprajapati009/PID_Controller/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)](https://github.com/jayprajapati009/PID_Controller/actions/workflows/run-unit-test-and-upload-codecov.yml)
+[![codecov](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2/branch/main/graph/badge.svg)](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Overview
 
@@ -12,6 +14,7 @@ Simple starter C++ project with:
 - GoogleTest
 
 ## Standard install via command-line
+
 ```bash
 # Download the code:
   git clone https://github.com/TommyChangUMD/cpp-boilerplate-v2
@@ -42,7 +45,7 @@ Simple starter C++ project with:
   rm -rf build/
 ```
 
-ref: https://cmake.org/cmake/help/latest/manual/cmake.1.html
+ref: <https://cmake.org/cmake/help/latest/manual/cmake.1.html>
 
 ## Building for code coverage (for assignments beginning in Week 4)
 
@@ -72,9 +75,9 @@ This generates a index.html page in the build/app_coverage sub-directory that ca
 
 ## How to use GitHub CI to upload coverage report to Codecov
 
-### First, sign up Codecov with you GitHub account.
+### First, sign up Codecov with you GitHub account
 
-  https://about.codecov.io/sign-up/
+  <https://about.codecov.io/sign-up/>
 
 ### Enable the repository you want to upload from
 
@@ -86,7 +89,7 @@ want to receive coverage data from.
 
 See below for the setup of this repo:
 
-https://github.com/TommyChangUMD/cpp-boilerplate-v2/blob/main/.github/workflows/run-unit-test-and-upload-codecov.yml
+<https://github.com/TommyChangUMD/cpp-boilerplate-v2/blob/main/.github/workflows/run-unit-test-and-upload-codecov.yml>
 
 ### Add your Codecov and GitHub CI badge to README.md
 
@@ -94,42 +97,42 @@ Follow the instruction below to copy the badge (in markdown format)
 and paste it at the top of your README.md file.
 
 For example:
+
 #### CICD Workflow status
 
-https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
+<https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge>
 
 For example,
 
 To generate the CICD badge for this particular repo, I put the line below in this README.md file:
+
 ``` markdown
 ![CICD Workflow status](https://github.com/TommyChangUMD/cpp-boilerplate-v2/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)
 ```
-![CICD Workflow status](https://github.com/TommyChangUMD/cpp-boilerplate-v2/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)
 
+![CICD Workflow status](https://github.com/TommyChangUMD/cpp-boilerplate-v2/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)
 
 #### Code Coverage Report
-https://docs.codecov.com/docs/status-badges
+
+<https://docs.codecov.com/docs/status-badges>
 
 For example, to generate the Code Coverage badge for this particular repo,  I put the line below in this README.md file:
+
 ``` markdown
 [![codecov](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2/branch/main/graph/badge.svg)](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2)
 ```
 
 [![codecov](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2/branch/main/graph/badge.svg)](https://codecov.io/gh/TommyChangUMD/cpp-boilerplate-v2)
-
-
 
 Note: When you click on the codecov badge, you should see the coverage
 report.  You should also see the source file listing.  If not, you may
 need to login your codecov account first.
 
-
 ## Working with C++ IDE and LSP
 
 You must set up clangd and use it with the C++ IDE of your choice. Most people use Visual Studio Code, but if you are using some other IDE, be sure to check if it supports the Language Server Protocol (LSP).
 
-ref: https://clangd.llvm.org/installation.html
-
+ref: <https://clangd.llvm.org/installation.html>
 
 ### clangd C++ language server setup
 
@@ -150,11 +153,11 @@ CompileFlags:
   Remove: [-fprofile-abs-path]
 ```
 
-This configuration instructs clangd to use C++-17 standard and catch any unused include files.  You are welcome to customize it further.   See https://clangd.llvm.org/config for more info.
+This configuration instructs clangd to use C++-17 standard and catch any unused include files.  You are welcome to customize it further.   See <https://clangd.llvm.org/config> for more info.
 
 ### Visual studio code C++ IDE setup
 
-Download vscode from https://code.visualstudio.com/docs/?dv=linux64_deb.
+Download vscode from <https://code.visualstudio.com/docs/?dv=linux64_deb>.
 
 To install and it on your Ubuntu, do
 
@@ -164,13 +167,14 @@ sudo dpkg -i code_1.81.1-1691620686_amd64.deb
 code
 ```
 
-Now, you must configure it to use clangd. Follow the instructions at https://clangd.llvm.org/installation.html#editor-plugins and look for "Visual Studio Code" under the `Editor plugins` section.
+Now, you must configure it to use clangd. Follow the instructions at <https://clangd.llvm.org/installation.html#editor-plugins> and look for "Visual Studio Code" under the `Editor plugins` section.
 
-See https://github.com/clangd/vscode-clangd for more info.
+See <https://github.com/clangd/vscode-clangd> for more info.
 
 ### Emacs C++ IDE setup
 
 If you use Emacs as your C++ IDE, then install eglot and supporting packages:
+
 ``` lisp
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
@@ -187,9 +191,7 @@ Add to ~/.emacs:
 (add-to-list 'eglot-server-programs '((c++-mode c-mode) "clangd"))
 ```
 
-See https://joaotavora.github.io/eglot/ for more info.
-
-
+See <https://joaotavora.github.io/eglot/> for more info.
 
 ## Verify C++ IDE and LSP are working
 
@@ -217,6 +219,7 @@ Alternatively, a program called `bear` can also be used to create `compile_comma
 Either way, this should produce the `compile_commands.json` file.  Now, you can use it with the IDE.
 
 ### Visual studio code
+
 1. Open `cpp-boilerplate-v2/app/main.cpp`
 
 1. Move the cursor to the `dummy()` function call and press the F12 key (or right-click->Go to Definition).  Visual studio code should automatically open `cpp-boilerplate-v2/include/lib.hpp` and place the curse at line 5, where the `dummy` function is defined.
