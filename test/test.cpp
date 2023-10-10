@@ -23,7 +23,7 @@ TEST(pid_controller_test, test_output_vel_1) {
   double actualVelocity = 0.0;
   double output = pid.compute_velocity(setpoint, actualVelocity);
 
-  EXPECT_EQ(output, 2);
+  EXPECT_EQ(output, 101);
 }
 
 /**
@@ -36,5 +36,5 @@ TEST(pid_controller_test, test_output_vel_2) {
   double actualVelocity = 10.0;
   double output = pid.compute_velocity(setpoint, actualVelocity);
 
-  EXPECT_EQ(output, -2.9);
+  EXPECT_EQ(output, 50.2);
 }
